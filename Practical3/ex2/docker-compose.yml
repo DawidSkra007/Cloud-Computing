@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    image: dawidskra007/ex2app
+    ports:
+      - "8000:5000"
+    restart: always
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
